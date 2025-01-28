@@ -207,5 +207,6 @@ rustc --version
 ```
 
 ### Conclusion
-You’ve just set up a development environment and written a basic 'Hello, World!' program in Rust. These essential skills lay the groundwork for tackling various open-source and professional projects, paving the way for a promising journey with Rust!"
+Great job you've just finished setting up your developement environment and you've written 'Hello, World' program in Rust. These are vital skills and hats off to you for taking that first step to tackle all types of projects, whether professional or open-source. Nice!!
+
 
