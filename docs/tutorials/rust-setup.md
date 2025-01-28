@@ -26,8 +26,8 @@ Before you begin, make sure you have the following:
 
 1. Create a new directory for your project:
     ```bash
-    mkdir RustDevContainer
-    cd RustDevContainer
+    mkdir rust-dev-container
+    cd rust-dev-container
     ```
 2. Initialize a Git repository:
     ```bash
