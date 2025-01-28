@@ -2,15 +2,11 @@
 * Primary author: [Bamlak Tesfaye](https://github.com/bamlak363)
 * Reviewer: [Yunseok Hwang](https://github.com/yunseok19)
 
-
-
-
-
 This tutorial will guide you through setting up a Dev Container for Rust development in VSCode. We’ll cover everything from creating a blank directory to writing, compiling, and running a simple "Hello COMP423" Rust program.
 
 ---
 
-## Prerequisites
+## Part 1: Prerequisites
 
 Before you begin, make sure you have the following:
 
@@ -26,7 +22,7 @@ Before you begin, make sure you have the following:
 
 ## Step-by-Step Instructions
 
-### 1. Start with a Blank Directory
+### Step 1. Start with a Blank Directory
 
 1. Create a new directory for your project:
     ```bash
@@ -80,7 +76,7 @@ Old versions of git choose the name master for the primary branch, but these day
 ```bash 
 git push --set-upstream origin main
 ```
-# Part 2. Setting Up the Development Environment
+## Part 2. Setting Up the Development Environment
 ###**Step 1. Add Development Container Configuration**
 
 1. In VS Code, open the `rust-dev-container` directory. You can do this via: File > Open Folder.
@@ -100,7 +96,7 @@ The `devcontainer.json` file defines the configuration for your development envi
 - **customizations**: Adds useful configurations to VS Code, like installing the Python extension. When you search for VSCode extensions on the marketplace, you will find the string identifier of each extension in its sidebar. Adding extensions here ensures other developers on your project have them installed in their dev containers automatically.
 - **postCreateCommand**: A command to run after the container is created. In our case, it will use `pip` to install the dependencies listed in `requirements.txt`.
 
-### 2. Configure the Dev Container
+###**Step 2: Configure the Dev Container**
 
 
 1. Inside the `.devcontainer` folder, create a `devcontainer.json` file with the following content:
@@ -127,7 +123,7 @@ The `devcontainer.json` file defines the configuration for your development envi
     - **`customizations.vscode.extensions`**: Installs the official `rust-analyzer` extension for better coding experience.
     - **`postCreateCommand`**: Verifies the installation by showing the installed version of `rustc`.
 
-## Step 3. Reopen the Project in a VSCode Dev Container
+###**Step 3: Reopen the Project in a VSCode Dev Container**
 
 Reopen the project in the container by pressing `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
 
@@ -139,8 +135,7 @@ rustc --version
 
 
 ---
-
-### 3. Create and Initialize a Rust Project
+##Part 3: Create and Initialize a Rust Project
 
 1. Open your directory in VSCode:
     ```
@@ -161,7 +156,7 @@ rustc --version
 
 ---
 
-### 4. Write the "Hello COMP423" Program
+### 2. Write the "Hello COMP423" Program
 
 1. Open the `main.rs` file located in `src/`:
     ```bash
@@ -176,7 +171,7 @@ rustc --version
 
 ---
 
-### 5. Build and Run the Program
+### 3. Build and Run the Program
 
 1. **Build the Project**:
     ```bash
@@ -210,3 +205,7 @@ To confirm you’re using a recent version of Rust, run:
 ```bash
 rustc --version
 ```
+
+### Conclusion
+You’ve just set up a development environment and written a basic 'Hello, World!' program in Rust. These essential skills lay the groundwork for tackling various open-source and professional projects, paving the way for a promising journey with Rust!"
+
