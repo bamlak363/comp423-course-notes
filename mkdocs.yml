@@ -1,6 +1,7 @@
 site_name: COMP423 Course Notes
 theme:
   name: material
+  
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -9,4 +10,7 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
